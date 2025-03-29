@@ -1,0 +1,790 @@
+2025-03-16 19:30:19.551 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-16 19:30:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-16 19:30:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-16 19:30:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-16 19:30:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [22412]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:55384 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:55384 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 55407) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-16 19:30:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 8885800b-1f1f-4a36-8b1e-a2fd5ba96beb
+[32m2025-03-16 19:30:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-16_18-17-14_3aaf44d1defc4985894b1225b77faaa8
+INFO:     ::1:55384 - "GET /favicon.ico HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55408 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55408 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55409 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55410 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55411 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55413 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55412 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55412 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55412 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55413 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55411 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55409 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55410 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55413 - "GET /live2d-models/shizuku/motions/flickHead_01.mtn HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55413 - "GET /live2d-models/shizuku/motions/pinchIn_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55413 - "GET /live2d-models/shizuku/motions/tapBody_01.mtn HTTP/1.1" 304 Not Modified
+[32m2025-03-16 19:30:32[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐗 started!
+[32m2025-03-16 19:30:32[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-16 19:30:32[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 喂，你好。
+INFO:     127.0.0.1:55523 - "GET /live2d-models/shizuku/expressions/f04.exp.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55524 - "GET /avatars/shizuku.png HTTP/1.1" 304 Not Modified
+[32m2025-03-16 19:30:42[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-16 19:30:42[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [joy] 嗨！很高兴见到你！有什么数学问题需要我帮忙解答吗？
+[32m2025-03-16 19:30:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🔥 started!
+[32m2025-03-16 19:30:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-16 19:30:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个你该怎么做呢？
+[32m2025-03-16 19:30:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-16 19:31:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-16 19:31:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [joy] 好的，我们来一步步解答这个题目。题目是 2乘以(5加5乘以2)除以3加(6除以2加8)等于多少？首先，我们按照运算顺序来解题。先计算括号内的部分：
+
+5加5乘以2等于5加10等于15。然后，2乘以15等于30。接着，30除以3等于10。最后，6除以2加8等于3加8等于11。所以，10加11等于21。答案是21。
+[32m2025-03-16 19:31:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 8885800b-1f1f-4a36-8b1e-a2fd5ba96beb disconnected
+[32m2025-03-16 19:31:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 8885800b-1f1f-4a36-8b1e-a2fd5ba96beb disconnected
+INFO:     connection closed
+^C2025-03-16 19:33:09.307 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-16 19:33:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-16 19:33:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-16 19:33:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-16 19:33:17[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [6884]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:57078 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 57104) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-16 19:33:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client ccc726fe-445c-48cd-bdad-293b076c0f1b
+INFO:     127.0.0.1:57105 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57105 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57108 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57109 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57110 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57105 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57111 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57105 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57105 - "GET /live2d-models/shizuku/motions/tapBody_02.mtn HTTP/1.1" 304 Not Modified
+[32m2025-03-16 19:33:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client ccc726fe-445c-48cd-bdad-293b076c0f1b disconnected
+[32m2025-03-16 19:33:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client ccc726fe-445c-48cd-bdad-293b076c0f1b disconnected
+INFO:     connection closed
+^C2025-03-18 21:28:44.049 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:28:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:28:48[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:28:48[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:28:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [4808]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+^C2025-03-18 21:37:31.271 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:37:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:37:35[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:37:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:37:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [25304]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+^C2025-03-18 21:37:51.930 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:37:51[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:37:51[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:37:51[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:37:51[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:37:51[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:37:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:37:56[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:37:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:37:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [19728]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:57077 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:57077 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 57079) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-18 21:38:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client f9d1bed5-b662-4d1f-8aab-796c414fc027
+[32m2025-03-18 21:38:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-16_19-33-18_54a63b1553eb41558a1348fabe82116e
+INFO:     ::1:57077 - "GET /favicon.ico HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57080 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57080 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57081 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57082 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57083 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57085 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57084 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57084 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57084 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57083 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57085 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57082 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57081 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+[32m2025-03-18 21:38:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🦆 started!
+[32m2025-03-18 21:38:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 21:38:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 喂，你好。
+INFO:     127.0.0.1:57209 - "GET /live2d-models/shizuku/expressions/f01.exp.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57210 - "GET /avatars/shizuku.png HTTP/1.1" 304 Not Modified
+[32m2025-03-18 21:38:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 21:38:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 嗨！有什么数学问题需要我帮忙解答吗？
+INFO:     127.0.0.1:57281 - "GET /live2d-models/shizuku/motions/shake_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57281 - "GET /live2d-models/shizuku/motions/pinchIn_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57281 - "GET /live2d-models/shizuku/motions/shake_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57281 - "GET /live2d-models/shizuku/motions/tapBody_02.mtn HTTP/1.1" 200 OK
+[32m2025-03-18 21:38:28[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client f9d1bed5-b662-4d1f-8aab-796c414fc027 disconnected
+[32m2025-03-18 21:38:28[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client f9d1bed5-b662-4d1f-8aab-796c414fc027 disconnected
+INFO:     connection closed
+^C2025-03-18 21:38:59.188 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:38:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:39:03[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:39:03[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:39:06[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [19120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+^C2025-03-18 21:51:47.583 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:51:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:51:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:51:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:51:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:51:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:51:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:51:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:51:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:51:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [12840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 12393): 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+2025-03-18 21:52:00.280 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:52:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+^C2025-03-18 21:55:39.362 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:55:39[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+^C2025-03-18 21:56:07.396 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:56:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:56:12[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:56:12[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:56:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [5028]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+^C2025-03-18 21:57:38.575 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 21:57:38[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 21:57:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 21:57:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 21:57:46[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 21:57:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:57:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:57:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:57:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:57:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [24120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:54178 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 54186) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-18 21:58:04[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 593e9b8b-8f48-4cb6-8c35-8e5bd180957c
+INFO:     127.0.0.1:54206 - "GET /live2d-models/shizuku/motions/flickHead_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54206 - "GET /live2d-models/shizuku/motions/flickHead_01.mtn HTTP/1.1" 200 OK
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m174[0m | ASR already initialized with the same config.
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m186[0m | TTS already initialized with the same config.
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m198[0m | VAD already initialized with the same config.
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+[32m2025-03-18 21:58:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36mhandle_config_switch[0m:[36m368[0m | Configuration switched to 锐锐.yaml
+[32m2025-03-18 21:58:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-16_18-01-49_84eab883eec74af986018fe7637446a4
+[32m2025-03-18 21:58:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🦺 started!
+[32m2025-03-18 21:58:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 21:58:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个题该怎么做呢？
+[32m2025-03-18 21:58:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_handler[0m:[36mhandle_individual_interrupt[0m:[36m97[0m | 🛑 Conversation task was successfully interrupted
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m109[0m | 🤡👍 Conversation 🦺 cancelled because interrupted.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m174[0m | ASR already initialized with the same config.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m186[0m | TTS already initialized with the same config.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m198[0m | VAD already initialized with the same config.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36mhandle_config_switch[0m:[36m368[0m | Configuration switched to conf.yaml
+[32m2025-03-18 21:59:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-18_21-58-04_6a06e1efcca545f9bfb7f698afb0059f
+[32m2025-03-18 21:59:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🌹 started!
+[32m2025-03-18 21:59:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 21:59:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个题该怎么做呢？我不会请你一步步教我。
+[32m2025-03-18 21:59:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:00:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:00:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 好的，我们一步步来解这个题目。首先，我们要按照运算顺序来做，先做括号里面的运算，然后是乘除，最后加减。第一步，计算括号内的部分：
+5 加上 5 乘以 2 等于多少呢？
+[32m2025-03-18 22:00:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🦊 started!
+[32m2025-03-18 22:00:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:00:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 等于15。
+[32m2025-03-18 22:00:24[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:00:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:00:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 不是的，我们先算括号里面的。5 加上 5 乘以 2 应该是先做乘法，5 乘以 2 等于 10，然后再加上 5，等于 15。所以括号内的结果是 15。接下来我们继续解题。
+[32m2025-03-18 22:00:49[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐗 started!
+[32m2025-03-18 22:00:49[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:00:50[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 接下来算除法。
+[32m2025-03-18 22:00:50[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=3d3626de939f4ec0a34d5ceb9cc9b583
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=9a7b7909c030456fa420d58007c88106
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=bcc7f7967e5141aab527c1c3d4440ede
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:01:02[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:01:04[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=98561ca896ef4f818ea7cb380a7146f1
+[32m2025-03-18 22:01:04[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:01:05[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=826a62ef436f4d49a34064385ea3c617
+[32m2025-03-18 22:01:05[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:01:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:01:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 好的，我们已经得到了括号内的结果是 15。接下来按照运算顺序，我们要做除法。题目中的除法有两部分：2 乘以 15 之后除以 3，以及 6 除以 2。先算 2 乘以 15 等于 30，然后 30 除以 3 等于多少呢？
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m174[0m | ASR already initialized with the same config.
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m186[0m | TTS already initialized with the same config.
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m198[0m | VAD already initialized with the same config.
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+[32m2025-03-18 22:01:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36mhandle_config_switch[0m:[36m368[0m | Configuration switched to 锐锐.yaml
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m174[0m | ASR already initialized with the same config.
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m186[0m | TTS already initialized with the same config.
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m198[0m | VAD already initialized with the same config.
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+[32m2025-03-18 22:01:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36mhandle_config_switch[0m:[36m368[0m | Configuration switched to conf.yaml
+[32m2025-03-18 22:01:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🎄 started!
+[32m2025-03-18 22:01:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:01:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个题该怎么做呢？
+[32m2025-03-18 22:01:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:01:38[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: Connection timeout to host wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=E37A5F609C11CA9CC4B1442C917519817FC38563057F35F8738FAAEB8B5A180D&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=a44706158815400aa230121fa4a54fc4
+[32m2025-03-18 22:01:38[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_handler[0m:[36mhandle_individual_interrupt[0m:[36m97[0m | 🛑 Conversation task was successfully interrupted
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m109[0m | 🤡👍 Conversation 🎄 cancelled because interrupted.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m174[0m | ASR already initialized with the same config.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m186[0m | TTS already initialized with the same config.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m198[0m | VAD already initialized with the same config.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36mhandle_config_switch[0m:[36m368[0m | Configuration switched to 锐锐.yaml
+[32m2025-03-18 22:02:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-18_22-01-14_999e9108fc5f44419d15f064d45b09b4
+[32m2025-03-18 22:02:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🧵 started!
+[32m2025-03-18 22:02:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:02:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个你该怎么做？我不会。
+[32m2025-03-18 22:02:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:02:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:02:47[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 好的，我们来一步步解决这个问题。首先，我们需要按照运算顺序来解题。你先尝试计算括号内的部分，然后乘除，最后加减。试试看吧！
+[32m2025-03-18 22:02:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🌱 started!
+[32m2025-03-18 22:02:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:02:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 我们应该先算5加5乘2等于15，对吧？
+[32m2025-03-18 22:02:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:03:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:03:15[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 不是的，我们需要先计算括号内的乘法。5加5乘2应该是先算5乘2，然后再加5。这样会得到不同的结果。我们来一步步计算吧。
+[32m2025-03-18 22:03:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 👔 started!
+[32m2025-03-18 22:03:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:03:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 是等于4吧。
+[32m2025-03-18 22:03:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:03:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:03:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 不是的，我们先计算括号内的部分。5加5乘2等于15，然后乘以2得到30。接下来我们继续按照运算顺序来解题。
+[32m2025-03-18 22:03:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐝 started!
+[32m2025-03-18 22:03:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-18 22:03:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 我们先计算6除以2加8等于11。
+[32m2025-03-18 22:03:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-18 22:04:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-18 22:04:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 好的，我们一步步来。首先计算括号内的部分：
+
+1.\(5 + 5 \times 2 = 5 + 10 = 15\)
+2.然后乘以2：\(2 \times 15 = 30\)
+3.接下来除以3：\(30 \div 3 = 10\)
+4.最后加上6除以2加8的结果：\(6 \div 2 + 8 = 3 + 8 = 11\)
+
+所以最后的答案是 \(10 + 11 = 21\)。你再试试看吧！
+[32m2025-03-18 22:05:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 593e9b8b-8f48-4cb6-8c35-8e5bd180957c disconnected
+[32m2025-03-18 22:05:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 593e9b8b-8f48-4cb6-8c35-8e5bd180957c disconnected
+INFO:     connection closed
+^C2025-03-18 22:06:27.894 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 22:06:27[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 22:06:27[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 22:06:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 22:06:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 22:06:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 22:06:28[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 22:06:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 22:06:32[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+^C2025-03-18 22:11:55.141 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-18 22:11:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-18 22:11:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-18 22:11:59[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-18 22:12:01[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [26056]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+^C2025-03-22 20:59:22.519 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-22 20:59:22[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-22 20:59:26[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-22 20:59:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-22 20:59:31[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [17316]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:51897 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:51897 - "GET /libs/live2dcubismcore.min.js HTTP/1.1" 200 OK
+INFO:     ::1:51898 - "GET /libs/live2d.min.js HTTP/1.1" 200 OK
+INFO:     ::1:51900 - "GET /assets/main-6gNOTEMZ.css HTTP/1.1" 200 OK
+INFO:     ::1:51901 - "GET /assets/main-DsLaT6SU.js HTTP/1.1" 200 OK
+INFO:     ::1:51899 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51902 - "GET /bg/room-interior-illustration.jpeg HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 51903) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-22 20:59:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client bc5791f9-1f1b-499d-8162-c595ecccbbea
+INFO:     127.0.0.1:51904 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51904 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51909 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51910 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51912 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51913 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51911 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51912 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51904 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51913 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51910 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51912 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51911 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51911 - "GET /live2d-models/shizuku/motions/pinchIn_02.mtn HTTP/1.1" 200 OK
+[32m2025-03-22 20:59:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🦺 started!
+[32m2025-03-22 20:59:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-22 20:59:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 你好。
+INFO:     127.0.0.1:51934 - "GET /live2d-models/shizuku/expressions/f04.exp.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51935 - "GET /avatars/shizuku.png HTTP/1.1" 200 OK
+INFO:     ::1:51936 - "GET /favicon.ico HTTP/1.1" 200 OK
+[32m2025-03-22 20:59:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-22 20:59:54[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: 你好 [joy] 有什么数学问题需要我帮忙解答吗
+[32m2025-03-22 20:59:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client bc5791f9-1f1b-499d-8162-c595ecccbbea disconnected
+[32m2025-03-22 20:59:55[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client bc5791f9-1f1b-499d-8162-c595ecccbbea disconnected
+INFO:     connection closed
+^C2025-03-29 11:50:05.587 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-29 11:50:05[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-29 11:50:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-29 11:50:10[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-29 11:50:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [11288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:63479 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:63479 - "GET /libs/live2dcubismcore.min.js HTTP/1.1" 200 OK
+INFO:     ::1:63480 - "GET /libs/live2d.min.js HTTP/1.1" 200 OK
+INFO:     ::1:63483 - "GET /assets/main-6gNOTEMZ.css HTTP/1.1" 200 OK
+INFO:     ::1:63484 - "GET /assets/main-DsLaT6SU.js HTTP/1.1" 200 OK
+INFO:     ::1:63482 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63486 - "GET /bg/room-interior-illustration.jpeg HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 63487) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 11:50:58[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 9b239f58-8101-454b-92a4-509b0d93bb95
+INFO:     ::1:63484 - "GET /favicon.ico HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63489 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63489 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63493 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63495 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63494 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63497 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63496 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63493 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63493 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63489 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63495 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63497 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63494 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+[32m2025-03-29 11:51:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐯 started!
+[32m2025-03-29 11:51:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 11:51:07[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: Hello.
+INFO:     127.0.0.1:63530 - "GET /avatars/shizuku.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63533 - "GET /live2d-models/shizuku/expressions/f04.exp.json HTTP/1.1" 200 OK
+[32m2025-03-29 11:51:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 11:51:20[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: Hi![joy] Nice to meet you!How can I help you with math today?
+[32m2025-03-29 11:51:34[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 👔 started!
+[32m2025-03-29 11:51:34[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 11:51:34[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 1加1加2一直加到100等于多少？
+[32m2025-03-29 11:51:46[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: 503, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=61322BE7EED8EA821ED250D15889D9AB2D68C28C6367AE94B98C01765EE82070&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=32e4a8cd117e4ef59272609acdd00560'
+[32m2025-03-29 11:51:46[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+[32m2025-03-29 11:52:02[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 11:52:02[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: 这是一个等差数列求和的问题。我们来一步步解决它。首先，我们知道这个数列是从1开始，一直加到100。这是一个等差数列，其中首项是1，末项是100，公差是1。等差数列的求和公式是：(首项 + 末项) * 项数 / 2
+
+这里，首项是1，末项是100，项数是100。所以我们可以把它们代入公式：
+
+(1 + 100) * 100 / 2
+
+现在我们来计算这个结果。
+[32m2025-03-29 11:52:23[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 9b239f58-8101-454b-92a4-509b0d93bb95 disconnected
+[32m2025-03-29 11:52:23[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 9b239f58-8101-454b-92a4-509b0d93bb95 disconnected
+INFO:     connection closed
+^C2025-03-29 13:32:37.885 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-29 13:32:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-29 13:32:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-29 13:32:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-29 13:32:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-29 13:32:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-29 13:32:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-29 13:32:43[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-29 13:32:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-29 13:32:44[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [15476]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:50996 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:50996 - "GET /libs/live2dcubismcore.min.js HTTP/1.1" 200 OK
+INFO:     ::1:50997 - "GET /libs/live2d.min.js HTTP/1.1" 200 OK
+INFO:     ::1:51002 - "GET /assets/main-DsLaT6SU.js HTTP/1.1" 200 OK
+INFO:     ::1:51001 - "GET /assets/main-6gNOTEMZ.css HTTP/1.1" 200 OK
+INFO:     ::1:51000 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51005 - "GET /bg/room-interior-illustration.jpeg HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 51006) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:32:51[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client a1384a80-0137-41f6-9b31-bc8e4b73d156
+INFO:     127.0.0.1:51007 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51007 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51009 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51010 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51013 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51012 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51011 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51007 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51007 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51013 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51011 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51009 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51010 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:32:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client a1384a80-0137-41f6-9b31-bc8e4b73d156 disconnected
+[32m2025-03-29 13:32:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client a1384a80-0137-41f6-9b31-bc8e4b73d156 disconnected
+INFO:     connection closed
+^C2025-03-29 13:46:21.133 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-29 13:46:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-29 13:46:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-29 13:46:25[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-29 13:46:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [25512]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:52280 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:52280 - "GET /libs/live2dcubismcore.min.js HTTP/1.1" 200 OK
+INFO:     ::1:52281 - "GET /libs/live2d.min.js HTTP/1.1" 200 OK
+INFO:     ::1:52283 - "GET /assets/main-DsLaT6SU.js HTTP/1.1" 200 OK
+INFO:     ::1:52284 - "GET /assets/main-6gNOTEMZ.css HTTP/1.1" 200 OK
+INFO:     ::1:52282 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52285 - "GET /bg/room-interior-illustration.jpeg HTTP/1.1" 200 OK
+INFO:     ('127.0.0.1', 52286) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:46:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 62a1b816-aa36-4661-9fbb-c6f8d056b15c
+[32m2025-03-29 13:46:45[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-29_13-32-51_867487cb4e3148a79b4412012ac02d2e
+INFO:     127.0.0.1:52288 - "GET /live2d-models/shizuku/shizuku.model.json HTTP/1.1" 200 OK
+INFO:     ::1:52283 - "GET /favicon.ico HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /live2d-models/shizuku/shizuku.moc HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /live2d-models/shizuku/shizuku.1024/texture_00.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /live2d-models/shizuku/shizuku.1024/texture_01.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52291 - "GET /live2d-models/shizuku/shizuku.1024/texture_02.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52292 - "GET /live2d-models/shizuku/shizuku.1024/texture_03.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52293 - "GET /live2d-models/shizuku/shizuku.1024/texture_04.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52292 - "GET /live2d-models/shizuku/shizuku.1024/texture_05.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52292 - "GET /live2d-models/shizuku/motions/idle_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52291 - "GET /live2d-models/shizuku/motions/idle_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52293 - "GET /live2d-models/shizuku/motions/idle_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /live2d-models/shizuku/shizuku.pose.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52292 - "GET /live2d-models/shizuku/shizuku.physics.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:46:56[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 62a1b816-aa36-4661-9fbb-c6f8d056b15c disconnected
+[32m2025-03-29 13:46:56[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 62a1b816-aa36-4661-9fbb-c6f8d056b15c disconnected
+INFO:     connection closed
+INFO:     ::1:52320 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 52323) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:46:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 72ebed6d-c263-4772-b5a6-7aa14f0591f2
+[32m2025-03-29 13:46:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-29_13-46-45_3a4d4822bcd34934a51ec40456724ef0
+[32m2025-03-29 13:47:03[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🍄 started!
+[32m2025-03-29 13:47:03[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 你好
+INFO:     127.0.0.1:52349 - "GET /avatars/shizuku.png HTTP/1.1" 200 OK
+[32m2025-03-29 13:47:08[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m46[0m | 
+Error: edge-tts unable to generate audio: 503, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=DF4B005BF9ADD7BF35A7B66C733AE1B0271644F3CC5306D240CEBA8CE6DC7EBD&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=dbcf194bd98a4d69ac2905a4135c24a9'
+[32m2025-03-29 13:47:08[0m | [41m[1mCRITICAL[0m | [36msrc.open_llm_vtuber.tts.edge_tts[0m:[36mgenerate_audio[0m:[36m47[0m | It's possible that edge-tts is blocked in your region.
+INFO:     127.0.0.1:52351 - "GET /live2d-models/shizuku/expressions/f04.exp.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:47:08[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 13:47:08[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: 你好！[joy] 有什么数学问题需要我帮忙解答吗？
+[32m2025-03-29 13:47:11[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐧 started!
+[32m2025-03-29 13:47:11[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 13:47:11[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 你能听见我吗？
+[32m2025-03-29 13:47:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 72ebed6d-c263-4772-b5a6-7aa14f0591f2 disconnected
+[32m2025-03-29 13:47:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 72ebed6d-c263-4772-b5a6-7aa14f0591f2 disconnected
+[32m2025-03-29 13:47:18[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m109[0m | 🤡👍 Conversation 🐧 cancelled because interrupted.
+INFO:     connection closed
+INFO:     ::1:52560 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 52566) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:49:12[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 5841c2e6-96d5-44a3-a7e0-5bd004d3eced
+[32m2025-03-29 13:49:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 👔 started!
+[32m2025-03-29 13:49:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 13:49:14[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: Any你how.
+[32m2025-03-29 13:49:17[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_handler[0m:[36mhandle_individual_interrupt[0m:[36m97[0m | 🛑 Conversation task was successfully interrupted
+[32m2025-03-29 13:49:17[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m109[0m | 🤡👍 Conversation 👔 cancelled because interrupted.
+[32m2025-03-29 13:49:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐵 started!
+[32m2025-03-29 13:49:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 13:49:19[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 喂，你好。
+INFO:     127.0.0.1:52589 - "GET /live2d-models/shizuku/expressions/f01.exp.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:49:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 5841c2e6-96d5-44a3-a7e0-5bd004d3eced disconnected
+[32m2025-03-29 13:49:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 5841c2e6-96d5-44a3-a7e0-5bd004d3eced disconnected
+[32m2025-03-29 13:49:27[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m109[0m | 🤡👍 Conversation 🐵 cancelled because interrupted.
+INFO:     connection closed
+^C2025-03-29 13:54:53.631 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-29 13:54:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-29 13:54:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-29 13:54:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-29 13:55:00[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [23540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ::1:53144 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 53147) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:55:22[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 28dc5a19-9cb7-4f5b-82bb-054ef5093326
+INFO:     127.0.0.1:53153 - "GET /live2d-models/shizuku/motions/shake_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53153 - "GET /live2d-models/shizuku/motions/tapBody_02.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53153 - "GET /live2d-models/shizuku/motions/flickHead_00.mtn HTTP/1.1" 200 OK
+[32m2025-03-29 13:55:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🐗 started!
+[32m2025-03-29 13:55:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 13:55:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 没一点能看见我吗？
+[32m2025-03-29 13:55:41[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+INFO:     127.0.0.1:53211 - "GET /live2d-models/shizuku/expressions/f01.exp.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:55:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 13:55:53[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 嗨！很高兴见到你！有什么数学问题需要我帮忙解答吗？
+[32m2025-03-29 13:55:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 👔 started!
+[32m2025-03-29 13:55:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36mprocess_user_input[0m:[36m151[0m | Transcribing audio input...
+[32m2025-03-29 13:55:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 你能看见我吗？
+[32m2025-03-29 13:55:57[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+INFO:     127.0.0.1:53256 - "GET /live2d-models/shizuku/expressions/f04.exp.json HTTP/1.1" 200 OK
+[32m2025-03-29 13:56:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 13:56:09[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [joy] 哈哈，虽然我看不到你，但我能帮你解决数学问题！有什么需要帮忙的吗？
+INFO:     ::1:53145 - "GET / HTTP/1.1" 304 Not Modified
+[32m2025-03-29 13:56:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_websocket_communication[0m:[36m223[0m | Client 28dc5a19-9cb7-4f5b-82bb-054ef5093326 disconnected
+[32m2025-03-29 13:56:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_disconnect[0m:[36m300[0m | Client 28dc5a19-9cb7-4f5b-82bb-054ef5093326 disconnected
+INFO:     connection closed
+INFO:     ::1:53145 - "GET /node_modules/%40chatscope/chat-ui-kit-styles/dist/default/styles.min.css HTTP/1.1" 404 Not Found
+INFO:     ('127.0.0.1', 53298) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:56:16[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client 019555f9-f108-4943-bfd2-0a40957799c7
+^C2025-03-29 13:56:29.369 | INFO     | __main__:<module>:86 - Running in standard mode. For detailed debug logs, use: uv run run_server.py --verbose
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36m__main__[0m:[36mrun[0m:[36m57[0m | Open-LLM-VTuber, version v1.1.2
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36mupgrade[0m:[36msync_user_config[0m:[36m350[0m | [DEBUG] 用户配置已是最新。
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_live2d[0m:[36m156[0m | Initializing Live2D: shizuku-local
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.live2d_model[0m:[36m_lookup_model_info[0m:[36m142[0m | Model Information Loaded.
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_asr[0m:[36m166[0m | Initializing ASR: sherpa_onnx_asr
+[32m2025-03-29 13:56:29[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.asr.sherpa_onnx_asr[0m:[36m__init__[0m:[36m81[0m | Sherpa-Onnx-ASR: Using cpu for inference
+[32m2025-03-29 13:56:34[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_tts[0m:[36m178[0m | Initializing TTS: edge_tts
+[32m2025-03-29 13:56:34[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_vad[0m:[36m190[0m | Initializing VAD: silero_vad
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.vad.silero[0m:[36mload_vad_model[0m:[36m50[0m | Loading Silero-VAD model...
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.service_context[0m:[36minit_agent[0m:[36m202[0m | Initializing Agent: basic_memory_agent
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agent_factory[0m:[36mcreate_agent[0m:[36m32[0m | Initializing agent: basic_memory_agent
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm_factory[0m:[36mcreate_llm[0m:[36m20[0m | Initializing LLM: openai_compatible_llm
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.stateless_llm.openai_compatible_llm[0m:[36m__init__[0m:[36m51[0m | Initialized AsyncLLM with the parameters: https://dashscope.aliyuncs.com/compatible-mode/v1, qwen-vl-max
+[32m2025-03-29 13:56:36[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.agent.agents.basic_memory_agent[0m:[36m__init__[0m:[36m66[0m | BasicMemoryAgent initialized.
+INFO:     Started server process [22188]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:12393 (Press CTRL+C to quit)
+INFO:     ('127.0.0.1', 53343) - "WebSocket /client-ws" [accepted]
+INFO:     connection open
+[32m2025-03-29 13:56:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.websocket_handler[0m:[36mhandle_new_connection[0m:[36m122[0m | Connection established for client faa29f02-72be-4f92-a367-9c9a3d32ce44
+[32m2025-03-29 13:56:37[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.chat_history_manager[0m:[36mget_history_list[0m:[36m297[0m | Removed empty history file: 2025-03-29_13-56-16_7377faf59c4e4b8596f76c90ff8541ed
+[32m2025-03-29 13:56:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m49[0m | New Conversation Chain 🌳 started!
+[32m2025-03-29 13:56:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m72[0m | User input: 这个题怎么做
+[32m2025-03-29 13:56:52[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m74[0m | With 1 images
+[32m2025-03-29 13:57:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.conversation_utils[0m:[36msend_conversation_end_signal[0m:[36m210[0m | 😎👍✅ Conversation Chain 😊 completed!
+[32m2025-03-29 13:57:21[0m | [1mINFO    [0m | [36msrc.open_llm_vtuber.conversations.single_conversation[0m:[36mprocess_single_conversation[0m:[36m104[0m | AI response: [neutral] 这个题目是求5乘以5的结果。我们可以一步一步来计算。首先，我们知道5乘以1等于5。然后，每次增加一个5，结果就增加5。所以：
+- 5乘以2等于10
+- 5乘以3等于15
+- 5乘以4等于20
+- 5乘以5等于25
+
+所以，5乘以5的结果是25。
+INFO:     127.0.0.1:53444 - "GET /live2d-models/shizuku/motions/pinchOut_00.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53444 - "GET /live2d-models/shizuku/motions/tapBody_01.mtn HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53444 - "GET /live2d-models/shizuku/motions/tapBody_00.mtn HTTP/1.1" 200 OK
+^C^C
