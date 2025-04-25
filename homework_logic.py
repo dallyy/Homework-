@@ -1,24 +1,25 @@
 from collections import namedtuple
-from sortedcontainers import SortedSet
+from sortedcontainers import SortedList
 import Un
 from fractions import Fraction
+from collections import defaultdict
 Question = namedtuple('Question', ['id', 'diff', 'q', 'limit'])
 
 class Homework:
     def __init__(self):
+        self.flag=defaultdict(int)
         self.student = {"name": "张三", "rating": 1000}
         self.q_bank = None
         self.update_q_bank()
-        self.cur_q = None
-        self.done = 0
-        self.next_id = 22  # 下一个题目的ID
+        self.cur_q = self.q_bank[0]
+        self.xuanti=defaultdict(bool)
 
     def update_q_bank(self):
         question_list = [
             Question(1, 800, "12/5 *2= ?", 12),
             Question(2, 800, "3 + 1 = ?", 10),
-            Question(3, 1000, "5 * 5 = ?", 15),
-            Question(4, 1000, "2*(5+5*2)/3+(6/2+8)= ?", 15),
+            Question(3, 800, "5 * 5 = ?", 15),
+            Question(4, 2000, "2*(5+5*2)/3+(6/2+8)= ?", 15),
             Question(5, 1200, "12 / 4+2+3 = ?", 20),
             Question(6, 1200, "3 * 4 = ?", 20),
             Question(7, 1400, "25 + 37 = ?", 25),
@@ -35,7 +36,7 @@ class Homework:
             Question(19, 1500, "6 - 3x =10", 20),
         ]
 
-        self.q_bank = SortedSet(question_list, key=lambda q: abs(q.diff - self.student["rating"]))
+        self.q_bank = SortedList(question_list, key=lambda q: abs(q.diff - self.student["rating"]))
 
     def add_question(self, question_text, difficulty):
         """添加新题目，并验证题目是否符合要求"""
@@ -66,10 +67,17 @@ class Homework:
 
 
     def recommend(self, correct):
-        self.q_bank = SortedSet(self.q_bank, key=lambda q: abs(q.diff - self.student["rating"]))
-        if correct:return self.q_bank.pop(0)
-        else:
-            return self.cur_q
+        j=0
+        if correct:
+            self.flag[self.cur_q.id]=1
+            if self.xuanti[self.cur_q.id]:self.cur_q=self.q_bank[0]
+            while self.flag[self.cur_q.id]==1:
+                j+=1
+                self.cur_q=self.q_bank[j]
+            while self.xuanti[self.cur_q.id]:
+                j+=1
+                self.cur_q=self.q_bank[j]
+        return self.cur_q
 
     def update_rating(self, q, correct, time_taken):
         threshold_time = 10
@@ -79,7 +87,6 @@ class Homework:
 
         reward = 30 * time_factor * (1 - e) if correct else -max(min_penalty, 30 * e) * time_factor
         self.student["rating"] = max(800, min(2000, self.student["rating"] + reward))
-        self.done += 1
 
     def search_by_diff(self, diff_min=None, diff_max=None):
 

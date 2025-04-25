@@ -8,7 +8,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('run_both.log', encoding='utf-8'),
+        logging.FileHandler('run_both.log', encoding='gbk'),
         logging.StreamHandler()
     ]
 )
@@ -17,7 +17,7 @@ logging.basicConfig(
 project_root = Path(__file__).parent.resolve()
 
 # 定义要运行的脚本路径
-test_script = project_root / 'test.py'
+test_script = project_root / 'main.py'
 qd_script = project_root / 'vlu' / 'qd.py'
 
 # 验证脚本存在
@@ -29,7 +29,7 @@ if not qd_script.exists():
     logging.error(f"QD script not found at {qd_script}")
     exit(1)
 
-# 运行test.py的进程
+
 try:
     test_process = subprocess.Popen(
         ['python', str(test_script)],
